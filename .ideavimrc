@@ -1,0 +1,17 @@
+Plug 'preservim/nerdtree'
+Plug 'tpope/vim-commentary'
+set number                        " line numbers
+" set <leader> to <space>
+let mapleader = " "
+:map <leader>r <Action>(ReformatCode)
+:map <leader>o <Action>(GotoFile)
+:map <leader>s <Action>(FileStructurePopup)
+:map <leader>f <Action>(Find)
+:map <leader>fp <Action>(FindInPath)
+:map l <Action>(NextTab)
+:map L <Action>(PreviousTab)
+:map z <Action>(JumpToLastChange)
+:map <leader>t <Action>(ActivateTerminalToolWindow)
+:map <leader>c <Action>(ActivateTerminalToolWindow)
+:map <leader>n :NERDTreeToggle<CR>
+
