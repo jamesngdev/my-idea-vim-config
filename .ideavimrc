@@ -8,10 +8,11 @@ let mapleader = " "
 :map <leader>s <Action>(FileStructurePopup)
 :map <leader>f <Action>(Find)
 :map <leader>fp <Action>(FindInPath)
-:map l <Action>(NextTab)
-:map L <Action>(PreviousTab)
-:map z <Action>(JumpToLastChange)
+:map ] <Action>(NextTab)
+:map [ <Action>(PreviousTab)
+:map = <Action>(NextSplitter)
+:map - <Action>(PrevSplitter)
+:map <leader>w <Action>(CloseActiveTab)
+:map q <Action>(JumpToLastChange)
 :map <leader>t <Action>(ActivateTerminalToolWindow)
-:map <leader>c <Action>(ActivateTerminalToolWindow)
-:map <leader>n :NERDTreeToggle<CR>
-
+:map <leader>n :NERDTree<CR>
