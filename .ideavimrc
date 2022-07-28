@@ -16,3 +16,8 @@ let mapleader = " "
 :map q <Action>(JumpToLastChange)
 :map <leader>t <Action>(ActivateTerminalToolWindow)
 :map <leader>n :NERDTree<CR>
+:map <leader>j <Action>(EditorDown)
+:map <leader>t <Action>(ActivateTerminalToolWindow)
+:map <leader>x <Action>(EditorCut)
+:map <leader>x <Action>(EditorPaste)
+:map <leader>c <Action>(EditorCopy)
