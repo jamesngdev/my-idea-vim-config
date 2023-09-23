@@ -8,8 +8,8 @@ let mapleader = " "
 :map <leader>s <Action>(FileStructurePopup)
 :map <leader>f <Action>(Find)
 :map <leader>fp <Action>(FindInPath)
-:map <leader>- <Action>(NextTab)
-:map <leader>= <Action>(PreviousTab)
+:map <leader>- <Action>(PreviousTab)
+:map <leader>= <Action>(NextTab)
 :map <leader>l <Action>(NextSplitter)
 :map <leader>h <Action>(PrevSplitter)
 :map <leader>w <Action>(CloseActiveTab)
@@ -23,5 +23,3 @@ let mapleader = " "
 :map <leader>c <Action>(EditorCopy)
 :map <leader>gd <Action>(GotoDeclaration)
 :map <leader>gb <Action>(JumpToLastChange)
-
-
