@@ -1,6 +1,29 @@
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-commentary'
+
 set number                        " line numbers
+set ignorecase smartcase
+set NERDTree
+set hlsearch
+set showmode
+set scrolloff=5
+set history=1000
+set surround
+set incsearch
+set relativenumber
+set number
+set smartcase
+set hlsearch
+set visualbell
+set noerrorbells
+set easymotion
+set commentary
+set ideajoin
+set exchange
+set multiple-cursors
+set sneak
+
+
 " set <leader> to <space>
 let mapleader = " "
 :map <leader>r <Action>(ReformatCode)
@@ -15,11 +38,40 @@ let mapleader = " "
 :map <leader>w <Action>(CloseActiveTab)
 :map q <Action>(JumpToLastChange)
 :map <leader>t <Action>(ActivateTerminalToolWindow)
-:map <leader>n :NERDTreeToggle<CR>
+:map <leader>e :NERDTreeFocus<CR>
 :map <leader>j <Action>(EditorDown)
 :map <leader>t <Action>(ActivateTerminalToolWindow)
-:map <leader>x <Action>(EditorCut)
+map <leader>x <Action>(EditorCut)
 :map <leader>x <Action>(EditorPaste)
 :map <leader>c <Action>(EditorCopy)
 :map <leader>gd <Action>(GotoDeclaration)
 :map <leader>gb <Action>(JumpToLastChange)
+
+" Leader to save
+map <leader>s :action SaveAll<CR>
+map <leader>/ :action CommentByLineComment<CR>
+
+vnoremap <silent> <leader>/ :action CommentByLineComment<CR>
+
+
+" Quick window navigation
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-L> <C-W>l
+map <C-H> <C-W>h
+
+" Shortcut for copying to/from System Clipboard
+vmap <leader>y "+y
+vmap <leader>d "+d
+nmap <leader>P "+P
+
+" Splitting Windows
+nmap <leader>\ :vsplit<CR>
+nmap <leader>v :vsplit<CR>
+nmap <leader>- :split<CR>
+nmap <leader>h :split<CR>
+
+nmap <leader>fw :action SearchEverywhere<CR>
+
+" Quick Quite
+nnoremap <leader>q :q <CR>
